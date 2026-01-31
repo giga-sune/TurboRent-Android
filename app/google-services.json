@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "237024622526",
+    "project_id": "turborent-56d03",
+    "storage_bucket": "turborent-56d03.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237024622526:android:1acb54dee3d9c0c207abef",
+        "android_client_info": {
+          "package_name": "com.example.turborent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOBIc5vWzv5qo14P6YEDXDzb10jW5G_xE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

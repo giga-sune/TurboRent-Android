@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turborent_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/turborent_logout"
+            android:layout_marginEnd="8dp" />
+
+
+        <!-- top spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Car image -->
+        <ImageView
+            android:id="@+id/car_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@color/black" />
+
+        <!-- Brand + Model -->
+        <TextView
+            android:id="@+id/car_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tesla Model 3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/turborent_primary_text"
+            android:layout_marginTop="12dp" />
+
+        <!-- Color -->
+        <TextView
+            android:id="@+id/car_color_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color: Black"
+            android:textSize="16sp"
+            android:textColor="@color/turborent_primary_text"
+            android:layout_marginTop="6dp" />
+
+        <!-- Plate BELOW color -->
+        <TextView
+            android:id="@+id/car_plate_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plate: WR2507"
+            android:textSize="16sp"
+            android:textColor="@color/turborent_primary_text"
+            android:layout_marginTop="4dp" />
+
+        <!-- Owner -->
+        <TextView
+            android:id="@+id/car_owner_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Owner: Kadeem Best"
+            android:textSize="16sp"
+            android:textColor="@color/turborent_primary_text"
+            android:layout_marginTop="4dp" />
+
+        <!-- Cost per day -->
+        <TextView
+            android:id="@+id/car_price_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cost per day: $99.00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/turborent_primary_text"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Start Date Input -->
+        <EditText
+            android:id="@+id/start_date_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start (YYYY-MM-DD)"
+            android:background="@color/turborent_input_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/start_textView_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong email or password"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"  />
+
+
+        <!-- End Date Input -->
+        <EditText
+            android:id="@+id/end_date_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End (YYYY-MM-DD)"
+            android:background="@color/turborent_input_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/end_textView_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong email or password"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"  />
+
+        <!-- BOOK NOW -->
+        <Button
+            android:id="@+id/book_now_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BOOK NOW"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/turborent_primary"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/textView_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong email or password"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"  />
+
+
+    </LinearLayout>
+
+</ScrollView>

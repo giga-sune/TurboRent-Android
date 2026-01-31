@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/turborent_background"
+    android:padding="24dp">
+
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_logout"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/search_cars_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Cars"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/turborent_primary_text"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Search input -->
+    <EditText
+        android:id="@+id/search_city_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city (e.g. Toronto)"
+        android:background="@color/turborent_input_bg"
+        android:padding="12dp"
+        android:inputType="textCapWords"
+        android:textColor="@color/turborent_primary_text"
+        android:textColorHint="@color/turborent_hint"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Search button -->
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_primary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Map fragment takes the rest of the space -->
+    <fragment
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

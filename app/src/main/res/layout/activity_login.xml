@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@color/turborent_background"
+    tools:context=".LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+
+    <!-- Brand / Logo text -->
+    <TextView
+        android:id="@+id/app_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turbo=Rent"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:textColor="@color/turborent_primary_text"
+    android:letterSpacing="0.12"
+    android:layout_marginBottom="8dp" />
+
+    <!-- spacer -->
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="180dp"
+
+      />
+
+    <!-- Login label -->
+    <TextView
+        android:id="@+id/login_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/turborent_primary_text"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Email input -->
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@color/turborent_input_bg"
+        android:padding="12dp"
+        android:textColor="@color/turborent_primary_text"
+        android:textColorHint="@color/turborent_hint"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Password input -->
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@color/turborent_input_bg"
+        android:padding="12dp"
+        android:textColor="@color/turborent_primary_text"
+        android:textColorHint="@color/turborent_hint"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Error textview -->
+
+    <TextView
+        android:id="@+id/textView_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrong email or password"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"  />
+
+    <!-- Login button -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_primary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Register link text -->
+    <TextView
+        android:id="@+id/register_link_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account yet? Register here"
+        android:textSize="14sp"
+        android:textColor="@color/turborent_link"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="4dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+</LinearLayout>

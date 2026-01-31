@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/turborent_background"
+    tools:context=".activities.owner.OwnerDashboardActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/owner_dashboard_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/turborent_primary_text"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Add Car button -->
+    <Button
+        android:id="@+id/add_car_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Car"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_primary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- My Cars button -->
+    <Button
+        android:id="@+id/my_cars_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Cars"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_primary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Manage Bookings button -->
+    <Button
+        android:id="@+id/manage_bookings_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Bookings"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_primary" />
+
+    <!-- Spacer to push logout down -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Logout button  -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_logout"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>

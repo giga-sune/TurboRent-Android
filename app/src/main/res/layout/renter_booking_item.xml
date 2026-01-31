@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="@color/turborent_input_bg">
+
+    <ImageView
+        android:id="@+id/car_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        />
+
+    <!-- Confirmation Code -->
+    <TextView
+        android:id="@+id/confirmation_code_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WR2507"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/turborent_primary_text" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <!-- Car brand + model -->
+    <TextView
+        android:id="@+id/car_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tesla Model 3"
+        android:textSize="15sp"
+        android:textColor="@color/turborent_primary_text" />
+
+    <!-- Color -->
+    <TextView
+        android:id="@+id/car_color_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:textSize="14sp"
+        android:textColor="@color/turborent_primary_text"
+        android:layout_marginTop="2dp" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/car_address_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="123 Main St, Winnipeg"
+        android:textSize="14sp"
+        android:textColor="@color/turborent_primary_text"
+        android:layout_marginTop="2dp" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <!-- Date range -->
+    <TextView
+        android:id="@+id/date_range_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jan 6, 2024   -   Jan 10, 2024"
+        android:textSize="14sp"
+        android:textColor="@color/turborent_primary_text" />
+
+    <!-- Spacer -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancel_booking_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_logout"
+        android:padding="10dp" />
+
+</LinearLayout>

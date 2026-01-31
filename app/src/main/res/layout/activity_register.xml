@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@color/turborent_background"
+    tools:context=".activities.RegisterActivity">
+
+    <!-- Brand / Logo text -->
+    <TextView
+        android:id="@+id/app_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turbo=Rent"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/turborent_primary_text"
+        android:letterSpacing="0.12"
+        android:layout_marginBottom="8dp" />
+
+    <!-- small spacer so it can breathe -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- Register label -->
+    <TextView
+        android:id="@+id/register_label_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/turborent_primary_text"
+        android:layout_marginBottom="24dp" />
+
+    <!-- First Name -->
+    <EditText
+        android:id="@+id/first_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:background="@color/turborent_input_bg"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/turborent_primary_text"
+        android:textColorHint="@color/turborent_hint"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Last Name -->
+    <EditText
+        android:id="@+id/last_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:background="@color/turborent_input_bg"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/turborent_primary_text"
+        android:textColorHint="@color/turborent_hint"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@color/turborent_input_bg"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/turborent_primary_text"
+        android:textColorHint="@color/turborent_hint"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:background="@color/turborent_input_bg"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:textColor="@color/turborent_primary_text"
+        android:textColorHint="@color/turborent_hint"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Account type radio group -->
+    <RadioGroup
+        android:id="@+id/account_type_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/owner_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner"
+            android:textColor="@color/turborent_primary_text"
+            android:layout_marginEnd="24dp" />
+
+        <RadioButton
+            android:id="@+id/renter_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Renter"
+            android:textColor="@color/turborent_primary_text" />
+    </RadioGroup>
+
+    <!-- Register button -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_primary" />
+
+</LinearLayout>

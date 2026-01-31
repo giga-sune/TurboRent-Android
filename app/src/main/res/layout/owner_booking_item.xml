@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="@color/turborent_input_bg">
+
+    <ImageView
+        android:id="@+id/car_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/renter_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clark Kent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/turborent_primary_text" />
+
+    <TextView
+        android:id="@+id/confirmation_code_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Code: WR2507"
+        android:textSize="14sp"
+        android:textColor="@color/turborent_primary_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <TextView
+        android:id="@+id/price_per_day_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$250.00/day"
+        android:textSize="15sp"
+        android:textColor="@color/turborent_primary_text" />
+
+    <TextView
+        android:id="@+id/license_plate_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Plate: XR9621"
+        android:textSize="14sp"
+        android:textColor="@color/turborent_primary_text"
+        android:layout_marginTop="2dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <TextView
+        android:id="@+id/date_range_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dec 5, 2025 - Dec 10, 2025"
+        android:textSize="14sp"
+        android:textColor="@color/turborent_primary_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <Button
+        android:id="@+id/cancel_booking_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Booking"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/turborent_logout"
+        android:padding="10dp" />
+
+</LinearLayout>

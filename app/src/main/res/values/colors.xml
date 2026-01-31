@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="turborent_background">#F2F0EB</color>
+    <color name="turborent_primary">#1F2933</color>
+    <color name="turborent_logout">#1F2933</color>
+    <color name="turborent_primary_text">#111111</color>
+    <color name="turborent_hint">#7A7A85</color>
+    <color name="turborent_link">#1E88E5</color>
+    <color name="turborent_input_bg">#FFFFFFFF</color>
+    <color name="holo_red_dark">#FFCC0000</color>
+
+</resources>
